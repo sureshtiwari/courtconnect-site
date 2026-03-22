@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="CourtConnect — find pickup games near you, join players, chat, and stay in the loop."
+    />
+    <title>CourtConnect — Pickup sports, connected</title>
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body id="top">
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-glow" aria-hidden="true"></div>
+
+    <header class="wrap site-header">
+      <a class="logo" href="index.html">
+        <img
+          class="logo-img"
+          src="assets/app-icon-512.png"
+          width="38"
+          height="38"
+          alt="CourtConnect"
+          decoding="async"
+        />
+        CourtConnect
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#product">Features</a>
+        <a href="#contact">Contact</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="wrap hero" aria-labelledby="hero-title">
+        <p class="badge">Pickup games · Real players</p>
+        <h1 id="hero-title">Find a court. Fill a game. Play.</h1>
+        <p class="hero-lead">
+          CourtConnect helps you discover nearby pickup games, coordinate with
+          players, chat in context, and get notified when it matters — all from
+          your phone.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#" id="play-store-link">Get the app</a>
+          <a class="btn btn-ghost" href="#product">See features</a>
+        </div>
+      </section>
+
+      <section class="wrap section-features" id="product" aria-labelledby="product-heading">
+        <h2 id="product-heading">Built for players and organizers</h2>
+        <p class="section-intro">
+          Everything in one place — from finding a game to the last point (or a
+          friendly rally).
+        </p>
+        <div class="feature-grid">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🗺️</div>
+            <h3>Discover &amp; create games</h3>
+            <p>
+              Browse games near you or host your own with sport-specific settings
+              and skill levels.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">💬</div>
+            <h3>In-game chat</h3>
+            <p>
+              Coordinate meetups and updates without leaving the context of the
+              game.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🔔</div>
+            <h3>Push notifications</h3>
+            <p>
+              Get alerts when games change, spots open up, or someone reaches out.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🔐</div>
+            <h3>Secure sign-in</h3>
+            <p>
+              Sign in with Google or email so your account and games stay yours.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">👤</div>
+            <h3>Profiles &amp; privacy</h3>
+            <p>
+              Manage your profile, blocked users, and notification preferences.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">📅</div>
+            <h3>My games</h3>
+            <p>
+              Keep track of games you’ve joined and what’s coming up next.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="wrap" id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Support &amp; contact</h2>
+        <p class="section-intro">
+          Questions, feedback, or help with your account? We’d love to hear from
+          you.
+        </p>
+        <p class="section-intro contact-email">
+          <a class="btn btn-ghost" href="mailto:shuttleswaplabs@gmail.com">shuttleswaplabs@gmail.com</a>
+        </p>
+      </section>
+    </main>
+
+    <footer class="wrap site-footer">
+      <p>
+        © <span id="year"></span> CourtConnect · Shuttle Swap Labs.
+        <a href="privacy.html">Privacy</a>
+        ·
+        <a href="terms.html">Terms</a>
+        ·
+        <a href="#top">Back to top</a>
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      // Optional: set Play Store URL when you have a listing
+      // document.getElementById('play-store-link').href = 'https://play.google.com/...';
+    </script>
+  </body>
+</html>
