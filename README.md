@@ -43,6 +43,35 @@ python3 -m http.server 8080
 
 Then visit `http://127.0.0.1:8080`.
 
+## Deep linking (App Links / Universal Links)
+
+This repo hosts the verification files for shared game URLs (`/game/*`) used by the Flutter app.
+
+| File | Purpose |
+|------|---------|
+| `.well-known/apple-app-site-association` | iOS Universal Links — **edit** `REPLACE_TEAM_ID` with your [Apple Team ID](https://developer.apple.com/account#MembershipDetailsCard) (10 characters). |
+| `.well-known/assetlinks.json` | Android App Links — **edit** each `REPLACE_WITH_*` with real SHA-256 fingerprints from Play Console / your keystore (see below). |
+| `.nojekyll` | Tells GitHub Pages **not** to run Jekyll so `.well-known` is published as static files. |
+
+After pushing, verify (replace host if you use `www` only):
+
+```bash
+curl -sS "https://court-connect-hub.com/.well-known/apple-app-site-association" | head
+curl -sS "https://court-connect-hub.com/.well-known/assetlinks.json" | head
+```
+
+**Android SHA-256**
+
+- **Prod** (`com.courtconnect.court_connect`): Google Play Console → **Release** → **App integrity** → **App signing** → **App signing key certificate** → SHA-256.
+- **Dev** (`…court_connect.dev`): debug keystore (`keytool -list -v -keystore ~/.android/debug.keystore …`) and/or the signing key used for that flavor.
+
+**iOS / apex vs `www`**
+
+- Repo `CNAME` is **`www.court-connect-hub.com`**. The Flutter app uses share links on **`court-connect-hub.com`** (apex).
+- For Universal Links to verify, the **same host** that appears in links must serve the AASA file. Either:
+  - Configure **both** apex and `www` for this GitHub Pages site in **Settings → Pages → Custom domain** and DNS (see [GitHub docs](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages)), **or**
+  - Change the app’s `kGameShareDeepLinkHost` to `www.court-connect-hub.com` so it matches where Pages is primary.
+
 ## Notes
 
 - Assets use **relative** paths (`css/styles.css`) so they work for project sites under a subpath.

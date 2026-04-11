@@ -1,0 +1,19 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "REPLACE_TEAM_ID.com.courtconnect.courtConnect.dev",
+        "paths": [
+          "/game/*"
+        ]
+      },
+      {
+        "appID": "REPLACE_TEAM_ID.com.courtconnect.courtConnect",
+        "paths": [
+          "/game/*"
+        ]
+      }
+    ]
+  }
+}
