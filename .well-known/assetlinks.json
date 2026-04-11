@@ -19,7 +19,7 @@
       "namespace": "android_app",
       "package_name": "com.courtconnect.court_connect",
       "sha256_cert_fingerprints": [
-        "REPLACE_WITH_PLAY_APP_SIGNING_SHA256"
+        "ED:E3:ED:C4:59:6B:A1:30:B2:B7:3F:A1:91:F6:6A:AD:31:21:50:35:4A:57:33:97:AD:78:E9:FF:A2:A9:47:A6"
       ]
     }
   }

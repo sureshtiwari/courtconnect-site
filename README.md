@@ -50,7 +50,7 @@ This repo hosts the verification files for shared game URLs (`/game/*`) used by 
 | File | Purpose |
 |------|---------|
 | `.well-known/apple-app-site-association` | iOS Universal Links — uses Team ID `54M5J42GVY` with dev and prod bundle IDs. |
-| `.well-known/assetlinks.json` | Android App Links — **edit** each `REPLACE_WITH_*` with real SHA-256 fingerprints from Play Console / your keystore (see below). |
+| `.well-known/assetlinks.json` | Android App Links — **prod** SHA-256 set (Play app signing). **Dev** still needs your debug (or dev signing) fingerprint in place of `REPLACE_WITH_DEV_OR_DEBUG_SHA256`. |
 | `.nojekyll` | Tells GitHub Pages **not** to run Jekyll so `.well-known` is published as static files. |
 
 After pushing, verify (replace host if you use `www` only):
