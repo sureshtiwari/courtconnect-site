@@ -49,7 +49,7 @@ This repo hosts the verification files for shared game URLs (`/game/*`) used by 
 
 | File | Purpose |
 |------|---------|
-| `.well-known/apple-app-site-association` | iOS Universal Links — **edit** `REPLACE_TEAM_ID` with your [Apple Team ID](https://developer.apple.com/account#MembershipDetailsCard) (10 characters). |
+| `.well-known/apple-app-site-association` | iOS Universal Links — uses Team ID `54M5J42GVY` with dev and prod bundle IDs. |
 | `.well-known/assetlinks.json` | Android App Links — **edit** each `REPLACE_WITH_*` with real SHA-256 fingerprints from Play Console / your keystore (see below). |
 | `.nojekyll` | Tells GitHub Pages **not** to run Jekyll so `.well-known` is published as static files. |
 

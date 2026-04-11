@@ -3,13 +3,13 @@
     "apps": [],
     "details": [
       {
-        "appID": "REPLACE_TEAM_ID.com.courtconnect.courtConnect.dev",
+        "appID": "54M5J42GVY.com.courtconnect.courtConnect.dev",
         "paths": [
           "/game/*"
         ]
       },
       {
-        "appID": "REPLACE_TEAM_ID.com.courtconnect.courtConnect",
+        "appID": "54M5J42GVY.com.courtconnect.courtConnect",
         "paths": [
           "/game/*"
         ]
