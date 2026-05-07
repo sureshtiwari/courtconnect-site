@@ -72,6 +72,10 @@ curl -sS "https://court-connect-hub.com/.well-known/assetlinks.json" | head
   - Configure **both** apex and `www` for this GitHub Pages site in **Settings → Pages → Custom domain** and DNS (see [GitHub docs](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages)), **or**
   - Change the app’s `kGameShareDeepLinkHost` to `www.court-connect-hub.com` so it matches where Pages is primary.
 
+## Releases
+
+When this repo ships with an app or API release, cut **`release/vX.Y.Z`** from **`main`**, merge changes there, then push so GitHub Pages publishes. After deploy, re-run the **`curl`** checks above if **`.well-known`** or legal URLs changed. Full cross-repo process: [`../courtconnect/DOCUMENTATION.md` §14](../courtconnect/DOCUMENTATION.md#14-cross-repo-release-process).
+
 ## Notes
 
 - Assets use **relative** paths (`css/styles.css`) so they work for project sites under a subpath.
