@@ -30,7 +30,7 @@ Static landing page for **CourtConnect**: the Flutter app, Spring Boot backend, 
 
 Edit **`index.html`**:
 
-- **Play Store:** uncomment the script at the bottom and set the real Play Store URL, or change the **Get the app** button `href`.
+- **App Store / Play Store:** hero buttons link to the live listings (App Store id `6761649094`, Play package `com.courtconnect.court_connect`). Update `href`s when URLs change.
 - **Contact:** support email is set in the mailto link (update if it changes).
 
 ## Local preview
