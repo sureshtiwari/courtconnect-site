@@ -175,6 +175,84 @@ body {
   justify-content: center;
 }
 
+.hero-actions-stores {
+  align-items: stretch;
+}
+
+/* App Store / Google Play-style download badges */
+.store-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  min-height: 48px;
+  padding: 0.55rem 1rem 0.55rem 0.75rem;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: transform 0.15s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.store-badge:active {
+  transform: scale(0.98);
+}
+
+.store-badge-icon {
+  flex-shrink: 0;
+  display: block;
+}
+
+.store-badge-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.15;
+  text-align: left;
+}
+
+.store-badge-line1 {
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.92;
+}
+
+.store-badge-line2 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.store-badge-apple {
+  background: #000;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
+}
+
+.store-badge-apple:hover {
+  border-color: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.55);
+}
+
+.store-badge-google {
+  background: var(--bg-elevated);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.store-badge-google .store-badge-line1 {
+  color: var(--accent);
+}
+
+.store-badge-google:hover {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.store-badge-google .store-badge-play-logo {
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.35));
+}
+
 .btn {
   display: inline-flex;
   align-items: center;

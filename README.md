@@ -30,7 +30,7 @@ Static landing page for **CourtConnect**: the Flutter app, Spring Boot backend, 
 
 Edit **`index.html`**:
 
-- **App Store / Play Store:** hero buttons link to the live listings (App Store id `6761649094`, Play package `com.courtconnect.court_connect`). Update `href`s when URLs change.
+- **App Store / Play Store:** hero uses branded-style badges (Apple glyph + App Store copy; Play triangle + Google Play copy) linking to the live listings (App Store id `6761649094`, Play package `com.courtconnect.court_connect`). Update `href`s in **`index.html`** when URLs change.
 - **Contact:** support email is set in the mailto link (update if it changes).
 
 ## Local preview
